@@ -19,6 +19,6 @@ public class OpenAccountPageTest extends BaseTest {
         homePage = logInPage.logInPlayGround(UserData.ADMIN_USER_EMAIL, UserData.ADMIN_USER_PASSWORD);
         Thread.sleep(5000);
         assertEquals(homePage.homeNavBar.getText(), "Home");
-        //test
+
     }
 }
