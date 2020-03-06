@@ -1,0 +1,5 @@
+
+osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(¿²øøúÿÿÿÿ
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(úÛ¸®úÿÿÿÿ
+osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.( ¹•ÿÿÿÿÿ
+rsquid:S2068"V'PASSWORD' detected in this expression, review this potentially hard-coded credential.(¿²øøúÿÿÿÿ

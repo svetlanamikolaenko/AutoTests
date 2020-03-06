@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14bebba4-7e4a-4b16-bd8f-b5412ab6fa40" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/AccountPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/configurationManager/BaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configurationManager/BaseConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/accounts/OpenAccountPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/accounts/OpenAccountPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/base/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/configurationManager/BaseConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/configurationManager/BaseConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/accounts/OpenAccountPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/accounts/OpenAccountPageTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,15 +36,14 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="85" />
-    <option name="y" value="25" />
-    <option name="width" value="1750" />
-    <option name="height" value="970" />
-  </component>
   <component name="ProjectId" id="1Xbha3lhX046lSXtb4TIlcBIZ4R" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580240635713" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -52,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.OpenAccountPageTest.openAccountPageTest">
     <configuration name="OpenAccountPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutoTests" />
       <extension name="coverage">
@@ -70,8 +78,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OpenAccountPageTest.openAccountPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutoTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="accounts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="accounts" />
+      <option name="MAIN_CLASS_NAME" value="accounts.OpenAccountPageTest" />
+      <option name="METHOD_NAME" value="openAccountPageTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.OpenAccountPageTest.openAccountPageTest" />
         <item itemvalue="TestNG.OpenAccountPageTest" />
       </list>
     </recent_temporary>
@@ -89,48 +116,33 @@
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="OpenAccountPageTest - 2020.01.26 at 17h 08m 30s.xml">
-      <configuration name="OpenAccountPageTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="OpenAccountPageTest - 2020.01.26 at 17h 10m 16s.xml">
-      <configuration name="OpenAccountPageTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="OpenAccountPageTest - 2020.01.26 at 17h 11m 13s.xml">
-      <configuration name="OpenAccountPageTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="OpenAccountPageTest - 2020.01.26 at 17h 12m 09s.xml">
-      <configuration name="OpenAccountPageTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="OpenAccountPageTest - 2020.01.26 at 17h 13m 57s.xml">
-      <configuration name="OpenAccountPageTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="OpenAccountPageTest - 2020.01.26 at 17h 14m 29s.xml">
-      <configuration name="OpenAccountPageTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="OpenAccountPageTest - 2020.01.26 at 17h 15m 28s.xml">
-      <configuration name="OpenAccountPageTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="OpenAccountPageTest - 2020.01.26 at 17h 16m 32s.xml">
-      <configuration name="OpenAccountPageTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="OpenAccountPageTest - 2020.01.26 at 17h 21m 50s.xml">
-      <configuration name="OpenAccountPageTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="OpenAccountPageTest - 2020.01.28 at 21h 09m 05s.xml">
-      <configuration name="OpenAccountPageTest" configurationId="TestNG" />
-    </history-entry>
-  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/test/java/accounts/OpenAccountPageTest.java</url>
+          <line>14</line>
+          <properties field="homePage" class="accounts.OpenAccountPageTest" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>
