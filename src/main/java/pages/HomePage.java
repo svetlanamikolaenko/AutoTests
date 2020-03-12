@@ -6,8 +6,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage {
+    public HomePage homePage;
+
     final String accounts = "Accounts";
-    @FindBy(xpath = "//*[@id='oneHeader']//a[@href='/lightning/setup/SetupOneHome/home']")
+    @FindBy(xpath = "//*[@id='oneHeader']//a[@aria-selected='true']")
     public WebElement homeNavBar;
 
     @FindBy(xpath = "//div[@class='slds-icon-waffle']")
@@ -15,6 +17,10 @@ public class HomePage extends BasePage {
 
     @FindBy(xpath = "//input[@type='search'][@class='slds-input']")
     public WebElement searchAppsField;
+
+    public String getNavBarText(){
+        return homeNavBar.getText();
+    }
 
     public AccountPage openAccountPage(){
         iconAppLouncher.click();

@@ -23,9 +23,9 @@ public class OpenAccountPageTest extends BaseTest {
     }
 
     @Test
-    public void openAccountPageTest(){
-        assertEquals(homePage.homeNavBar.getText(), "Home");
+    public void openAccountPageTest() {
+        assertEquals(homePage.getNavBarText(), "Home", "Nav Bar should contain 'Home' text.");
         accountPage = homePage.openAccountPage();
-        assertEquals(accountPage.accountsPageName.getText(), "Accounts");
+        assertEquals(accountPage.getAccountsPageName(), "Accounts", "Accounts Page should have name 'Accounts'.");
     }
 }
