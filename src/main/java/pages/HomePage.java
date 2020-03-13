@@ -9,7 +9,7 @@ public class HomePage extends BasePage {
     public HomePage homePage;
 
     final String accounts = "Accounts";
-    @FindBy(xpath = "//*[@id='oneHeader']//a[@aria-selected='true']")
+    @FindBy(xpath = "//div[@class='bBottom']//a[@title='Home']")
     public WebElement homeNavBar;
 
     @FindBy(xpath = "//div[@class='slds-icon-waffle']")
