@@ -24,7 +24,7 @@ public class OpenAccountPageTest extends BaseTest {
     @Test
     public void openAccountPageTest() {
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(homePage.getNavBarText(), "Home", "Nav Bar should contain 'Home' text.":);
+        softAssert.assertEquals(homePage.getNavBarText(), "Home", "Nav Bar should contain 'Home' text.");
         accountPage = homePage.openAccountPage();
         softAssert.assertEquals(accountPage.getAccountsPageName(), "Accounts", "Accounts Page should have name 'Accounts'.");
         softAssert.assertAll();
