@@ -4,11 +4,10 @@ import base.BaseTest;
 import data.UserData;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import pages.AccountPage;
 import pages.HomePage;
 import pages.LogInPage;
-
-import static org.testng.Assert.assertEquals;
 
 public class OpenAccountPageTest extends BaseTest {
     public LogInPage logInPage;
@@ -16,16 +15,18 @@ public class OpenAccountPageTest extends BaseTest {
     public AccountPage accountPage;
 
     @BeforeTest
-    public void Login() throws InterruptedException {
+    public void login() {
         logInPage = base.openPlayGroundPage();
         homePage = logInPage.logInPlayGround(UserData.ADMIN_USER_EMAIL, UserData.ADMIN_USER_PASSWORD);
-        Thread.sleep(5000);
+
     }
 
     @Test
     public void openAccountPageTest() {
-        assertEquals(homePage.getNavBarText(), "Home", "Nav Bar should contain 'Home' text.");
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertEquals(homePage.getNavBarText(), "Home", "Nav Bar should contain 'Home' text.");
         accountPage = homePage.openAccountPage();
-        assertEquals(accountPage.getAccountsPageName(), "Accounts", "Accounts Page should have name 'Accounts'.");
+        softAssert.assertEquals(accountPage.getAccountsPageName(), "Accounts", "Accounts Page should have name 'Accounts'.");
+        softAssert.assertAll();
     }
 }

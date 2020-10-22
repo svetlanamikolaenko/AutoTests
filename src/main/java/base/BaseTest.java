@@ -9,6 +9,7 @@ public class BaseTest extends BaseConfiguration {
 
     @BeforeSuite(alwaysRun = true)
     protected void setUp() {
+
         System.setProperty("webdriver.chrome.driver", "/Users/mikolaenko/Documents/Tests/AutoTests/chromedriver");
     }
 

@@ -1,6 +1,7 @@
 package pages;
 
 import base.BasePage;
+import com.sun.org.glassfish.external.probe.provider.annotations.ProbeListener;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,7 +24,9 @@ public class HomePage extends BasePage {
     }
 
     public AccountPage openAccountPage(){
+        waitUntilVisible(iconAppLouncher, 3000);
         iconAppLouncher.click();
+        waitUntilVisible(searchAppsField, 3000);
         searchAppsField.sendKeys(accounts);
         searchAppsField.sendKeys(Keys.ENTER);
     return new AccountPage();
