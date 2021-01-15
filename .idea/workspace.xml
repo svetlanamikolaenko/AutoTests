@@ -6,17 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="14bebba4-7e4a-4b16-bd8f-b5412ab6fa40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/configurationManager/BaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configurationManager/BaseConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LogInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LogInPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/accounts/OpenAccountPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/accounts/OpenAccountPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/base/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/Base.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/base/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/BasePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/base/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/configurationManager/BaseConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/configurationManager/BaseConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/AccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/AccountPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/LogInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/LogInPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/accounts/OpenAccountPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/accounts/OpenAccountPageTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

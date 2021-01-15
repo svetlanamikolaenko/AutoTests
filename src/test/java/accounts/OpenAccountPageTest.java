@@ -21,15 +21,10 @@ public class OpenAccountPageTest extends BaseTest {
         homePage = logInPage.logInPlayGround(UserData.ADMIN_USER_EMAIL, UserData.ADMIN_USER_PASSWORD);
     }
 
-    @Test(priority = 1, description = "Verify opening Home Page")
-    public void homePageIsOpenedTest() {
-        softAssert.assertEquals(homePage.getNavBarText(), "Home", "Nav Bar should contain 'Home' text.");
-    }
-
-    @Test(priority = 2, description = "Verify opening Account Page")
+    @Test(priority = 1, description = "Verify opening Account Page")
     public void accountsPageIsOpenedTest() {
+        homePage.getNavBarText();
         accountPage = homePage.openAccountPage();
         softAssert.assertEquals(accountPage.getAccountsPageName(), "Accounts", "Accounts Page should have name 'Accounts'.");
-        softAssert.assertAll();
     }
 }
