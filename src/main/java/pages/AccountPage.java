@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class AccountPage extends BasePage {
     public AccountPage accountPage;
+
     @FindBy(xpath = "//li/span[contains(.,'Accounts')]")
     public WebElement accountsPageName;
 

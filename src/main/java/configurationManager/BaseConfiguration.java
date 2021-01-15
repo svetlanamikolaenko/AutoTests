@@ -14,7 +14,8 @@ public class BaseConfiguration {
             return driver;
         }
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("user-data-dir=C:\\Users\\Svitlana Mykolaienko\\AppData\\Local\\Google\\Chrome\\User Data");
+        options.addArguments("--profile-directory=Default");
+        options.addArguments("--disable-notifications");
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

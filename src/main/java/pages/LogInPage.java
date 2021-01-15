@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class LogInPage extends BasePage {
 
-
     @FindBy(id = "username")
     private WebElement emailField;
 
@@ -16,13 +15,10 @@ public class LogInPage extends BasePage {
     @FindBy(id = "Login")
     private WebElement logInButton;
 
-
-
     public HomePage logInPlayGround(String emailData, String passwordData) {
-
-        //emailField.clear();
+        emailField.clear();
         emailField.sendKeys(emailData);
-        // passwordField.clear();
+        passwordField.clear();
         passwordField.sendKeys(passwordData);
         logInButton.click();
         return new HomePage();

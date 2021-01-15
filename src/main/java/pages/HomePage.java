@@ -27,6 +27,7 @@ public class HomePage extends BasePage {
         iconAppLouncher.click();
         waitUntilVisible(searchAppsField, 3000);
         searchAppsField.sendKeys(accounts);
+        waitUntilVisible(searchAppsField, 3000);
         searchAppsField.sendKeys(Keys.ENTER);
     return new AccountPage();
     }
