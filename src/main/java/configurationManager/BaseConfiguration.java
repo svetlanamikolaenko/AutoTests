@@ -14,7 +14,7 @@ public class BaseConfiguration {
             return driver;
         }
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("user-data-dir=/Users/mikolaenko/Application Support/Google/Chrome/Default");
+        options.addArguments("user-data-dir=C:\\Users\\Svitlana Mykolaienko\\AppData\\Local\\Google\\Chrome\\User Data");
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
