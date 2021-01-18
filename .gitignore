@@ -1,4 +1,7 @@
-.idea/*
-*.iml
-target/*
 
+/.idea/
+*.iml
+target/
+allure-results/
+.gradle/
+target/

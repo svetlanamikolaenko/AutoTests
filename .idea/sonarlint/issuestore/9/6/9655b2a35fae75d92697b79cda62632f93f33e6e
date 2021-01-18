@@ -1,13 +1,0 @@
-
-W
-java:S1191"5Use classes from the Java API instead of Sun classes.(Ìë…úýÿÿÿÿ8‚§ðá’.
-4
-java:S1700
-"Rename field "homePage"(ß€¢Ç8‚§ðá’.
-q
-java:S1104
-"TMake homePage a static final constant or non-public and provide accessors if needed.(ß€¢Ç8‚§ðá’.
-†
-java:S1128"dRemove this unused import 'com.sun.org.glassfish.external.probe.provider.annotations.ProbeListener'.(Ìë…úýÿÿÿÿ8‚§ðá’.
->
-java:S1170"!Make this final field static too.(¶¾²Å8‚§ðá’.
