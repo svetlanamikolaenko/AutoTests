@@ -13,7 +13,6 @@ public class OpenAccountPageTest extends BaseTest {
     public LogInPage logInPage;
     public HomePage homePage;
     public AccountPage accountPage;
-    SoftAssert softAssert = new SoftAssert();
 
     @BeforeTest
     public void login() {
@@ -23,8 +22,8 @@ public class OpenAccountPageTest extends BaseTest {
 
     @Test(priority = 1, description = "Verify opening Account Page")
     public void accountsPageIsOpenedTest() {
-        homePage.getNavBarText();
-        accountPage = homePage.openAccountPage();
-        softAssert.assertEquals(accountPage.getAccountsPageName(), "Accounts", "Accounts Page should have name 'Accounts'.");
+        homePage.checkNavBarText()
+                .openAccountPage()
+                .checkAccountsPageName();
     }
 }
