@@ -13,6 +13,7 @@ public class BasePage extends Base{
         WebDriverWait wait = new WebDriverWait(driver, timeout);
         wait.until(ExpectedConditions.visibilityOf(element));
     }
+
     protected BasePage() {
         PageFactory.initElements(driver, this);
     }
