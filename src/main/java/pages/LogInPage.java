@@ -16,7 +16,6 @@ public class LogInPage extends BasePage {
     @FindBy(id = "Login")
     private WebElement logInButton;
 
-    //ACTION STEPS
     @Step ("Login to Salesforce PlayGround")
     public HomePage logInPlayGround(String emailData, String passwordData) {
         emailField.clear();

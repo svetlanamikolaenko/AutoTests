@@ -15,7 +15,6 @@ public class OpenAccountPageTest extends BaseTest {
     public AccountPage accountPage;
     SoftAssert softAssert = new SoftAssert();
 
-
     @BeforeTest
     public void login() {
         logInPage = base.openPlayGroundPage();
