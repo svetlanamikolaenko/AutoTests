@@ -9,7 +9,7 @@ import pages.AccountPage;
 import pages.HomePage;
 import pages.LogInPage;
 
-public class OpenAccountPageTest extends BaseTest {
+public class VerifyElementsOnAccountPageTest extends BaseTest {
     public LogInPage logInPage;
     public HomePage homePage;
     public AccountPage accountPage;
