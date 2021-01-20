@@ -9,6 +9,7 @@ import static base.WebElementUtils.clickJS;
 
 public class HomePage extends BasePage {
     public HomePage homePage;
+    final String accounts = "Accounts";
 
     @FindBy(xpath = "//div[@class='slds-icon-waffle']")
     public WebElement iconAppLouncher;
