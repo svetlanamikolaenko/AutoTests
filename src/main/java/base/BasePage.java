@@ -4,17 +4,25 @@ import configurationManager.BaseConfiguration;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-
-import static configurationManager.BaseConfiguration.getDriver;
+import java.time.Duration;
 
 public class BasePage extends Base{
     public WebDriver driver = BaseConfiguration.getDriver();
+    private FluentWait<WebDriver> waiter;
 
-    public void waitUntilLoading(WebElement element){
-        WebDriverWait wait = new WebDriverWait(driver, 1000);
-        wait.until(ExpectedConditions.visibilityOfAllElements(element));
+    public void waitUntilVisible(WebElement element, long timeoutInSeconds){
+        getWebDriverWait(timeoutInSeconds).until(ExpectedConditions.visibilityOf(element));
+    }
+
+    protected FluentWait<WebDriver> getWebDriverWait(long timeoutInSeconds) {
+        if (waiter == null) {
+            waiter = new WebDriverWait(driver, timeoutInSeconds);
+        }
+        waiter.withTimeout(Duration.ofSeconds(timeoutInSeconds)).ignoring(StaleElementReferenceException.class);
+
+        return waiter;
     }
 
     protected BasePage() {

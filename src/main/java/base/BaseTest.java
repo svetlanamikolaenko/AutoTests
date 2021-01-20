@@ -12,7 +12,6 @@ public class BaseTest extends BaseConfiguration {
         System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
     }
 
-
     @AfterSuite(alwaysRun = true)
     protected void afterSuiteActions() {
         BaseConfiguration.getDriver().quit();

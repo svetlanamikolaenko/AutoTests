@@ -35,7 +35,14 @@
             <classifier>standalone</classifier>
         </dependency>
 
-    </dependencies>
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.13.8</version>
+        </dependency>
 
+
+    </dependencies>
 
 </project>

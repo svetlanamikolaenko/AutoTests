@@ -1,0 +1,6 @@
+/.idea/
+*.iml
+target/
+allure-results/
+.gradle/
+debug.log
