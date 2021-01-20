@@ -4,16 +4,15 @@ import base.BaseTest;
 import data.UserData;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 import pages.AccountPage;
 import pages.HomePage;
 import pages.LogInPage;
+import static org.testng.Assert.assertEquals;
 
 public class VerifyElementsOnAccountPageTest extends BaseTest {
     public LogInPage logInPage;
     public HomePage homePage;
     public AccountPage accountPage;
-    SoftAssert softAssert = new SoftAssert();
 
     @BeforeTest
     public void login() {
@@ -21,11 +20,9 @@ public class VerifyElementsOnAccountPageTest extends BaseTest {
         homePage = logInPage.logInPlayGround(UserData.ADMIN_USER_EMAIL, UserData.ADMIN_USER_PASSWORD);
     }
 
-    @Test(priority = 1, description = "Verify opening Account Page")
+    @Test(description = "Verify opening Account Page")
     public void accountsPageIsOpenedTest() {
-        homePage.getHomePageNavBarText();
         accountPage = homePage.openAccountPage();
-        softAssert.assertEquals(accountPage.getAccountsPageName(), "Accounts", "Accounts Page should have name 'Accounts'.");
-        softAssert.assertAll();
+        assertEquals(accountPage.getAccountsPageName(), "Accounts", "Accounts Page should have name 'Accounts'.");
     }
 }

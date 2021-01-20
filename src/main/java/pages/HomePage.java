@@ -10,10 +10,6 @@ import static base.WebElementUtils.clickJS;
 public class HomePage extends BasePage {
     public HomePage homePage;
 
-    final String accounts = "Accounts";
-    @FindBy(xpath = "//div[@class='bBottom']//a[@title='Home']")
-    public WebElement homeNavBar;
-
     @FindBy(xpath = "//div[@class='slds-icon-waffle']")
     public WebElement iconAppLouncher;
 
@@ -34,10 +30,5 @@ public class HomePage extends BasePage {
         searchAppsField.sendKeys(accounts);
         clickJS(accountsAppLink);
         return new AccountPage();
-    }
-
-    @Step ("Get Home Page NavBar Text")
-    public String getHomePageNavBarText(){
-        return homeNavBar.getText();
     }
 }
