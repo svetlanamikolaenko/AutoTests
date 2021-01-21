@@ -1,6 +1,7 @@
 package accounts;
 
 import base.BaseTest;
+import base.PropertyFileReader;
 import data.UserData;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -14,10 +15,14 @@ public class VerifyElementsOnAccountPageTest extends BaseTest {
     public HomePage homePage;
     public AccountPage accountPage;
 
+    PropertyFileReader fileReader = new PropertyFileReader();
+    private String userEmail = fileReader.getPropertyValue("ADMIN_USER_EMAIL");
+    private String userPassword = fileReader.getPropertyValue("ADMIN_USER_PASSWORD");
+
     @BeforeTest
     public void login() {
         logInPage = base.openPlayGroundPage();
-        homePage = logInPage.logInPlayGround(UserData.ADMIN_USER_EMAIL, UserData.ADMIN_USER_PASSWORD);
+        homePage = logInPage.logInPlayGround(userEmail,userPassword);
     }
 
     @Test(description = "Verify opening Account Page")

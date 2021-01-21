@@ -4,7 +4,8 @@ import configurationManager.BaseConfiguration;
 import pages.LogInPage;
 
 public class Base {
-    private static String originUrl = "https://brave-panda-n9jnts-dev-ed.lightning.force.com/";
+    private PropertyFileReader fileReader = new PropertyFileReader();
+    private final String originUrl = fileReader.getPropertyValue("URL");
 
     public LogInPage openPlayGroundPage() {
         BaseConfiguration.getDriver().get(originUrl);
